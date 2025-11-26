@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Miniquiz from './containers/Miniquiz';
+import Header from './tempates/Header';
+import { Link, Outlet } from "react-router";
 
 function App() {
   return (
-    <Miniquiz/>
+    <>
+    <header>
+        <Header/>
+    </header>
+    <Outlet/>
+    </>
   );
 }
 
